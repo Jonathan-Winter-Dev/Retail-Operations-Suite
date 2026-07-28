@@ -1,0 +1,54 @@
+;Inventory Information and Purchase Order Estimation,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+;Filter:(Supplier  = THE RETAIL SHOP) ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+;Supplier,Item Lookup Code,Description,Reorder No.,On-Hand,Committed,On Order,Xfr In,Xfr Out,Reorder Pt.,Restock Lvl.,Qty to Order,Department,Category,Do Not Order?,Bin Location,MSRP,MPQ,Qty to Order (MPQ),Cost,Price,Price A,Price B,Price C,Lo Bound,Hi Bound,Sale Price,Sale Starts,Sale Ends,Last Sold,Inactive
+Overall ,,,,11365,0,111,0,743,,,48643,,,,,,,,,,,,,,,,,,,
+ THE RETAIL SHOP,,,,11365,0,111,0,743,,,48643,,,,,,,,,,,,,,,,,,,
+Garden Supplies Co,005782352,Premium Rose Bush,A001,12,2,0,0,0,A001,10,8,Garden,Plants,0,G01,9.99,1,8,3.50,7.99,3.995,6.99,7.49,5.99,9.99,0.00,01/01/1900,01/01/1900,26/07/2026,0
+Garden Supplies Co,005782353,Lavender Herb Plant,A002,18,3,0,0,0,A002,12,10,Garden,Plants,0,G02,5.99,1,10,1.80,3.99,1.995,3.49,3.79,2.99,5.99,0.00,01/01/1900,01/01/1900,25/07/2026,0
+Garden Supplies Co,005782354,Bamboo Cane Pack 10pk,A003,25,5,0,0,0,A003,15,12,Garden,Supports,0,G03,4.99,1,12,1.25,2.99,1.495,2.49,2.79,1.99,4.99,0.00,01/01/1900,01/01/1900,24/07/2026,0
+Garden Supplies Co,005782355,Seed Starter Tray,A004,30,4,0,0,0,A004,20,15,Garden,Propagation,0,G04,3.49,1,15,0.90,1.99,0.995,1.69,1.89,1.49,3.49,1.49,26/07/2026,31/07/2026,23/07/2026,0
+Garden Supplies Co,005782356,Multi Purpose Compost 40L,A005,20,6,0,0,0,A005,12,10,Garden,Compost,0,G05,8.99,1,10,3.20,6.99,3.495,5.99,6.49,4.99,8.99,0.00,01/01/1900,01/01/1900,22/07/2026,0
+Garden Supplies Co,005782357,Terracotta Plant Pot,A006,16,1,0,0,0,A006,8,6,Garden,Pots,0,G06,5.99,1,6,1.70,3.99,1.995,3.49,3.79,2.99,5.99,2.99,26/07/2026,05/08/2026,21/07/2026,0
+Garden Supplies Co,005782358,Hanging Basket 14 Inch,A007,10,2,0,0,0,A007,6,5,Garden,Containers,0,G07,12.99,1,5,4.00,8.99,4.495,7.99,8.49,6.99,12.99,0.00,01/01/1900,01/01/1900,20/07/2026,0
+Garden Supplies Co,005782359,Garden Protective Gloves,A008,40,8,0,0,0,A008,25,20,Garden,Accessories,0,G08,6.99,1,20,2.00,4.99,2.495,4.49,4.79,3.99,6.99,3.99,26/07/2026,02/08/2026,19/07/2026,0
+Garden Supplies Co,005782360,Blue Watering Can,A009 BLU,6,1,0,0,0,A009,5,4,Garden,Watering,0,G09,17.99,1,4,5.50,12.99,6.495,10.99,11.99,9.99,17.99,10.99,26/07/2026,31/07/2026,18/07/2026,0
+Garden Supplies Co,005782361,Green Watering Can,A009 GRN,8,1,0,0,0,A009,5,4,Garden,Watering,0,G10,17.99,1,4,5.50,12.99,6.495,10.99,11.99,9.99,17.99,0.00,01/01/1900,01/01/1900,18/07/2026,0
+Garden Supplies Co,005782362,Red Watering Can,A009 RED,5,0,0,0,0,A009,5,4,Garden,Watering,0,G11,17.99,1,4,5.50,12.99,6.495,10.99,11.99,9.99,17.99,11.99,26/07/2026,31/07/2026,16/07/2026,0
+Garden Supplies Co,005782363,Green Garden Wheelbarrow,A010 GRN,3,0,0,0,0,A010,3,2,Garden,Tools,0,G12,69.99,1,2,22.00,49.99,24.995,44.99,47.99,39.99,69.99,0.00,01/01/1900,01/01/1900,17/07/2026,0
+Garden Supplies Co,005782364,Blue Garden Wheelbarrow,A010 BLU,2,0,0,0,0,A010,3,2,Garden,Tools,0,G13,69.99,1,2,22.00,49.99,24.995,44.99,47.99,39.99,69.99,44.99,26/07/2026,10/08/2026,15/07/2026,0
+Garden Supplies Co,005782365,Black Garden Wheelbarrow,A010 BLK,4,1,0,0,0,A010,3,2,Garden,Tools,0,G14,69.99,1,2,22.00,49.99,24.995,44.99,47.99,39.99,69.99,0.00,01/01/1900,01/01/1900,14/07/2026,0
+Garden Supplies Co,005782366,Organic Tomato Plant,B001,24,3,0,0,0,B001,15,12,Garden,Plants,0,H01,4.99,1,12,1.40,2.99,1.495,2.49,2.79,1.99,4.99,0.00,01/01/1900,01/01/1900,26/07/2026,0
+Garden Supplies Co,005782367,Wooden Garden Trellis,B002,10,1,0,0,0,B002,5,4,Garden,Supports,0,H02,18.99,1,4,6.00,12.99,6.495,10.99,11.99,9.99,18.99,9.99,26/07/2026,03/08/2026,24/07/2026,0
+Garden Supplies Co,005782368,Plant Feed 1 Litre,B003,35,6,0,0,0,B003,20,15,Garden,Fertiliser,0,H03,8.99,1,15,2.80,5.99,2.995,4.99,5.49,4.49,8.99,0.00,01/01/1900,01/01/1900,25/07/2026,0
+Garden Supplies Co,005782369,Hand Trowel Stainless Steel,B004,18,2,0,0,0,B004,10,8,Garden,Tools,0,H04,9.99,1,8,3.20,6.99,3.495,5.99,6.49,5.49,9.99,5.99,26/07/2026,31/07/2026,23/07/2026,0
+Garden Supplies Co,005782370,Garden Secateurs,B005,14,2,0,0,0,B005,8,6,Garden,Tools,0,H05,19.99,1,6,7.00,14.99,7.495,12.99,13.99,11.99,19.99,0.00,01/01/1900,01/01/1900,22/07/2026,0
+Garden Supplies Co,005782361,Green Watering Hose 15m,C004,9,1,0,0,0,C004,5,4,Garden,Watering,0,J06,34.99,1,4,12.00,24.99,12.495,21.99,22.99,19.99,34.99,22.99,20/07/2026,30/07/2026,13/07/2026,0
+Garden Supplies Co,005782362,Garden Bird Feeder,D001,13,2,0,0,0,D001,7,5,Garden,Wildlife,0,K01,15.99,1,5,5.00,9.99,4.995,8.49,8.99,7.99,15.99,0,,,12/07/2026,0
+Garden Supplies Co,005782363,Wild Bird Seed 5kg,D002,20,4,0,0,0,D002,10,8,Garden,Wildlife,0,K02,12.99,1,8,4.00,8.99,4.495,7.49,7.99,6.99,12.99,7.99,21/07/2026,31/07/2026,11/07/2026,0
+Garden Supplies Co,005782364,Compost Scoop,D003,16,3,0,0,0,D003,8,6,Garden,Accessories,0,K03,6.99,1,6,2.00,4.99,2.495,4.49,4.79,3.99,6.99,0,,,10/07/2026,0
+Garden Supplies Co,005782365,Heavy Duty Garden Fork,E001,8,1,0,0,0,E001,4,3,Garden,Tools,0,L01,29.99,1,3,10.00,19.99,9.995,16.99,18.49,15.99,29.99,17.99,22/07/2026,05/08/2026,09/07/2026,0
+Garden Supplies Co,005782366,Stainless Garden Spade,E002,7,1,0,0,0,E002,4,3,Garden,Tools,0,L02,32.99,1,3,11.00,21.99,10.995,18.99,20.49,17.99,32.99,0,,,08/07/2026,0
+Garden Supplies Co,005782367,Plant Support Clips Pack,E003,50,10,0,0,0,E003,30,25,Garden,Supports,0,L03,3.99,1,25,1.00,2.49,1.245,2.19,2.29,1.99,3.99,1.99,24/07/2026,07/08/2026,07/07/2026,0
+Garden Supplies Co,005782368,Mini Greenhouse Cover,E004,15,2,0,0,0,E004,8,6,Garden,Propagation,0,L04,24.99,1,6,8.00,16.99,8.495,14.99,15.99,12.99,24.99,0,,,06/07/2026,0
+Garden Supplies Co,005782369,Outdoor Plant Labels Pack,E005,60,5,0,0,0,E005,35,30,Garden,Accessories,0,L05,4.99,1,30,1.20,2.99,1.495,2.49,2.79,2.29,4.99,2.49,25/07/2026,10/08/2026,05/07/2026,0
+Garden Supplies Co,005782370,Wooden Raised Garden Bed,E006,5,0,0,0,0,E006,3,2,Garden,Furniture,0,L06,99.99,1,2,40.00,79.99,39.995,69.99,74.99,64.99,99.99,0,,,04/07/2026,0
+Garden Supplies Co,005782371,Wooden Garden Kneeler,F001,12,2,0,0,0,F001,6,5,Garden,Accessories,0,M01,39.99,1,5,14.00,24.99,12.495,21.99,22.99,19.99,39.99,0,,,03/07/2026,0
+Garden Supplies Co,005782372,Decorative Garden Pebbles 10kg,F002,25,3,0,0,0,F002,15,10,Garden,Landscaping,0,M02,9.99,1,10,3.00,5.99,2.995,4.99,5.49,4.49,9.99,4.99,26/07/2026,12/08/2026,02/07/2026,0
+Garden Supplies Co,005782373,Slug Protection Pellets,F003,40,8,0,0,0,F003,20,15,Garden,Pest Control,0,M03,7.99,1,15,2.50,4.99,2.495,4.29,4.49,3.99,7.99,0,,,01/07/2026,0
+Garden Supplies Co,005782374,Garden Twine 100m,F004,35,5,0,0,0,F004,20,15,Garden,Accessories,0,M04,5.99,1,15,1.50,3.99,1.995,3.49,3.79,2.99,5.99,3.49,27/07/2026,14/08/2026,30/06/2026,0
+Garden Supplies Co,005782375,Metal Plant Support Ring,F005,18,2,0,0,0,F005,10,8,Garden,Supports,0,M05,8.99,1,8,2.80,5.99,2.995,4.99,5.49,4.49,8.99,0,,,29/06/2026,0
+Garden Supplies Co,005782376,Outdoor Solar Lantern,F006,14,1,0,0,0,F006,8,5,Garden,Lighting,0,M06,19.99,1,5,7.00,12.99,6.495,10.99,11.49,9.99,19.99,9.99,28/07/2026,15/08/2026,28/06/2026,0
+Garden Supplies Co,005782377,Herb Growing Kit,F007,20,4,0,0,0,F007,12,10,Garden,Propagation,0,M07,14.99,1,10,4.50,8.99,4.495,7.49,7.99,6.99,14.99,0,,,27/06/2026,0
+Garden Supplies Co,005782378,Ceramic Plant Marker Set,F008,30,3,0,0,0,F008,15,10,Garden,Accessories,0,M08,6.99,1,10,2.00,4.49,2.245,3.99,4.29,3.49,6.99,3.99,29/07/2026,16/08/2026,26/06/2026,0
+Garden Supplies Co,005782379,Large Garden Storage Trug,F009,8,1,0,0,0,F009,4,3,Garden,Storage,0,M09,34.99,1,3,12.00,22.99,11.495,19.99,20.99,18.99,34.99,0,,,25/06/2026,0
+Garden Supplies Co,005782380,Expandable Garden Hose,F010,10,2,0,0,0,F010,5,4,Garden,Watering,0,M10,49.99,1,4,18.00,34.99,17.495,29.99,31.99,27.99,49.99,29.99,30/07/2026,20/08/2026,24/06/2026,0
+Garden Supplies Co,005782381,Premium Lawn Seed 2kg,G001,22,4,0,0,0,G001,12,10,Garden,Lawn Care,0,N01,14.99,1,10,5.00,8.99,4.495,7.49,7.99,6.99,14.99,0,,,23/06/2026,0
+Garden Supplies Co,005782382,Lawn Fertiliser 5kg,G002,18,3,0,0,0,G002,10,8,Garden,Fertiliser,0,N02,19.99,1,8,7.00,12.99,6.495,10.99,11.49,9.99,19.99,10.99,31/07/2026,21/08/2026,22/06/2026,0
+Garden Supplies Co,005782383,Weed Control Spray 1L,G003,16,2,0,0,0,G003,8,6,Garden,Pest Control,0,N03,11.99,1,6,3.50,7.99,3.995,6.99,7.49,5.99,11.99,0,,,21/06/2026,0
+Garden Supplies Co,005782384,Garden Rake Steel,G004,9,1,0,0,0,G004,5,4,Garden,Tools,0,N04,24.99,1,4,9.00,16.99,8.495,14.99,15.99,12.99,24.99,14.99,01/08/2026,22/08/2026,20/06/2026,0
+Garden Supplies Co,005782385,Leaf Collection Bag,G005,20,3,0,0,0,G005,10,8,Garden,Storage,0,N05,12.99,1,8,4.00,8.99,4.495,7.49,7.99,6.99,12.99,0,,,19/06/2026,0
+Garden Supplies Co,005782386,Small Garden Sprayer,G006,14,2,0,0,0,G006,8,6,Garden,Watering,0,N06,15.99,1,6,5.00,9.99,4.995,8.49,8.99,7.99,15.99,8.99,02/08/2026,24/08/2026,18/06/2026,0
+Garden Supplies Co,005782387,Wooden Compost Bin,G007,6,0,0,0,0,G007,3,2,Garden,Compost,0,N07,79.99,1,2,30.00,59.99,29.995,51.99,54.99,49.99,79.99,0,,,17/06/2026,0
+Garden Supplies Co,005782388,Plant Watering Spikes,G008,45,6,0,0,0,G008,25,20,Garden,Watering,0,N08,6.99,1,20,2.00,4.99,2.495,4.29,4.49,3.99,6.99,3.99,03/08/2026,25/08/2026,16/06/2026,0
+Garden Supplies Co,005782389,Garden Mesh Netting 5m,G009,12,2,0,0,0,G009,6,5,Garden,Protection,0,N09,17.99,1,5,6.00,11.99,5.995,9.99,10.49,8.99,17.99,0,,,15/06/2026,0
+Garden Supplies Co,005782390,Folding Garden Chair,G010,7,1,0,0,0,G010,4,3,Garden,Furniture,0,N10,44.99,1,3,16.00,29.99,14.995,25.99,27.99,23.99,44.99,24.99,04/08/2026,27/08/2026,14/06/2026,0

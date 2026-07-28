@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Updater</title>
+    <link rel="stylesheet" href="./price-updater-styles.css">
+    <script src="price-updater-script.js" defer></script>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="nav">
+            <h1>Shop Tools</h1>
+            <ul>
+                <li class="activeLink"><a href="#">Price Updater</a></li>
+                <li><a>Label Maker</a></li>
+                <li><a>Barker Maker</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="csvInputsContainer">
+        <div class="modalBackdrop"></div>
+        <div class="card rmsMasterCsv">
+            <div class="step">1</div>
+                <div class="inputContentContainer">
+                <div class="textContainer">
+                    <h4>Choose SKU Master</h4>
+                    <p>Choose a .csv file that contains product data <em>exported from RMS</em></p>
+                    <details>
+                        <summary>More Details</summary>
+                        <p>Demo .csv files can be found here *****LINK GOES HERE*******</p>
+                        <p>Anonymised instructions on how to download .csv file:</p>
+                        <ol>
+                            <li>Navigate to <em>Reports</em></li>
+                            <li>Select <em> Button</em></li>
+                            <li>Select <em> Button</em></li>
+                            <li>Click <em> Button</em></li>
+                            <li>Click <em> All</em></li>
+                            <li>Click <em> Okay</em></li>
+                            <li>Click <em> Export</em></li>
+                            <li>Select <em> File</em></li>
+
+                        </ol>
+                    </details>
+                </div>
+                <div class="buttons-container">
+                    <input type="file" accept=".csv" class="rmsMasterCsvInput" required>
+                    <button class="clearRmsMasterCsv">Clear</button>
+                </div>
+            </div>
+        </div>
+        <div class="card newPriceCsv">
+            <div class="step">2</div>
+            <div class="inputContentContainer">
+                <div class="textContainer">
+                    <h4>Choose New Prices File (Optional)</h4>
+                    <p>Choose a .csv file that contains price updates.</p>
+                    <details>
+                        <summary>More Details</summary>
+                        <p>The file should contain the following columns:</p>
+                        <p><em>code, wasPrice, nowPrice, multiBuy</em></p>
+                    </details>
+                </div>
+                <div class="buttons-container">
+                    <input type="file" accept=".csv" class="newPriceCsvInput">
+                    <button class="clearNewPriceInput">Clear</button>
+                </div>
+            </div>
+        </div>
+        <div class="card rmsCodeCsv">
+            <div class="step">3</div>
+            <div class="inputContentContainer">
+                <div class="textContainer">
+                    <h4>Choose SKU Codes</h4>
+                    <p>Search and edit products using<em> SKU codes</em></p>
+                </div>
+                <div class="productInputsContainer">
+                    <div class="productSearchContainer">
+                        <div class="productDropdownContainer">
+                            <input type="text" name="productInput" id="productInput" placeholder="Search by SKU Code...">
+                            <ul id="productSuggestions"></ul>
+                        </div>
+                        <div class="beginsWithDiv">
+                            <input type="checkbox" name="productPatternMatch" id="productPatternMatch" class="selectCheckBox">
+                            <label for="productPatternMatch">Begins with</label>
+                        </div>
+                    </div>
+                    <button id="productInputAddButton">Add</button>
+                    <div class="undoRedoContainer">
+                        <button id="undoButton" class="iconButton">
+                            <img src="./../images/undo.svg" alt="undo">
+                        </button>
+                        <button id="redoButton" class="iconButton">
+                            <img src="./../images/redo.svg" alt="redo">
+                        </button>
+                    </div>
+                </div>                    
+                <div class="productsContainer">
+                    <form action="" method="" name="allProductsForm" id="allProductsForm">  
+                        <h3>Bulk Update Products</h3>
+                        <div class="bulkInputs">
+                            <div class="retailCostContainer">
+                                <div class="bulkRetailUpdate">
+                                    <label for="allSelectedRetailPrice">Retail Price</label>
+                                    <input type="text" name="allSelectedRetailPrice" id="allSelectedRetailPrice">
+                                </div>
+                                <div class="bulkCostUpdate">
+                                    <label for="allSelectedCostPrice">Cost Price</label>
+                                    <input type="text" name="allSelectedCostPrice" id="allSelectedCostPrice">
+                                </div>
+                            </div>
+                            <div class="bulkSaleUpdate">
+                                <div class="bulkSalePrice">
+                                    <label for="allSelectedCostPrice">Sale Price</label>
+                                    <input type="text" name="allSelectedSalePrice" id="allSelectedSalePrice">
+                                </div>
+                                <div class="bulkSaleDates">
+                                    <div class="bulkSaleDate">
+                                        <label for="allProductsSaleStartDateUpdate">Sale Start</label>
+                                        <input type="date" name="allProductsSaleStartDateUpdate" id="allProductsSaleStartDateUpdate">
+                                    </div>
+                                    <div class="bulkSaleDate">
+                                        <label for="allProductsSaleEndDateUpdate">Sale End</label>
+                                        <input type="date" name="allProductsSaleEndDateUpdate" id="allProductsSaleEndDateUpdate">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bulkActions">
+                                <input type="checkbox" name="lockAllProducts" id="lockAllProducts" class="lockCheckBox">
+                                <input type="checkbox" name="selectAllProducts" id="selectAllProducts" class="selectCheckBox">
+                                <button id="clearSelected" class="iconButton">
+                                    <img src="./../images/delete.svg">
+                                </button>
+                                <input type="submit" name="allProductsSubmit" id="allProductsSubmit">
+                            </div>
+                        </div>
+                    </form>    
+                    <div class="productTableContainer">
+                        <table id="productTable">
+                            <tr>
+                                <th>Product Details</th>
+                                <th>Current</th>
+                                <th>Update</th>
+                                <th>Actions</th>
+                            </tr>
+                            <tbody id="productTableBody"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card outputButtons">
+            <div class="step">4</div>
+            <div class="inputContentContainer">
+                <div class="textContainer">
+                    <h4>Download</h4>
+                    <ul>
+                        <li><em>Download Retail: </em>Products that have increased in price in a file format that can be imported to RMS.</li>
+                        <li><em>Download Sale: </em>Products that have gone on sale or their sale price have changed in a file format that can be accepted by RMS</li>
+                        <li><em>Download Cost: </em>Products with Cost Price changes in a file format that can be accepted by RMS</li>
+                        <li><em>Download Barker: </em>A file to be used in the Barker Maker for creating barkers</li>
+                    </ul>
+                </div>
+                <div class="downloadButtonsContainer">
+                    <button class="downloadRetail">Download Retail Update</button>
+                    <button class="downloadSale">Download Sale Update</button>
+                    <button class="downloadCost">Download Cost Update</button>
+                    <button class="downloadBarker">Download Barker</button>
+                    <input type="checkbox" name="inStockOnly" id="inStockOnly" class="selectCheckBox">
+                    <label for="inStockOnly">Create Barkers For In Stock Items Only</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
