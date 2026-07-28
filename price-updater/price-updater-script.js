@@ -727,7 +727,7 @@ function createProductClearButton(product) {
     const clearButton = createElement("button", "iconButton")
     
     const img = createElement("img")
-    img.src = "./../images/delete.svg"
+    img.src = "./images/delete.svg"
 
     clearButton.append(img)
 
