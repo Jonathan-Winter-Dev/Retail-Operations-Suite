@@ -100,23 +100,18 @@ Retail-Operations-Suite/
 ### Main Interface
 
 
-```markdown
 ![Main Interface](images/main-interface.png)
-```
+
 
 ### Product Editing
 
 
-```markdown
 ![Editing Products](images/edit-products.png)
-```
 
 ### CSV Export
 
 
-```markdown
 ![CSV Export](images/csv-export.png)
-```
 
 ---
 
