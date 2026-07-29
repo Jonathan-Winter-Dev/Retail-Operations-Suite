@@ -5,6 +5,9 @@
 
 
 // CONTENTS:
+
+// 0. IMPORTS FOR DEMO PURPOSES
+
 // 1. CONSTANTS AND GLOBAL VARIABLES
 //  - CSV EXPORT SCHEMA
 
@@ -29,6 +32,156 @@
 
 // 7. ENTRY POINT
 //  - EVENT LISTENERS
+
+
+// 0. DEMO DATA
+
+
+const demoData = [
+    {
+        rmsLookupCode: "900000001",
+        supplier: "Demo Garden Supplies",
+        code: "DEMO1RED",
+        description: "RED CERAMIC PLANT POT 30CM",
+        department: "GARDEN",
+        rmsCostPrice: 4.5,
+        rmsRetailPrice: 9.99,
+        rmsSalePrice: null,
+        saleStartDate: new Date(2026, 0, 1),
+        saleEndDate: new Date(2026, 0, 1),
+        stockQuantity: 24
+    },
+    {
+        rmsLookupCode: "900000002",
+        supplier: "Demo Garden Supplies",
+        code: "DEMO1BLU",
+        description: "BLUE CERAMIC PLANT POT 30CM",
+        department: "GARDEN",
+        rmsCostPrice: 4.5,
+        rmsRetailPrice: 9.99,
+        rmsSalePrice: 7.99,
+        saleStartDate: new Date(2026, 6, 29),
+        saleEndDate: new Date(2026, 7, 5),
+        stockQuantity: 18
+    },
+    {
+        rmsLookupCode: "900000003",
+        supplier: "Demo Garden Supplies",
+        code: "DEMO1GRN",
+        description: "GREEN CERAMIC PLANT POT 30CM",
+        department: "GARDEN",
+        rmsCostPrice: 4.5,
+        rmsRetailPrice: 9.99,
+        rmsSalePrice: null,
+        saleStartDate: new Date(2026, 0, 1),
+        saleEndDate: new Date(2026, 0, 1),
+        stockQuantity: 12
+    },
+    {
+        rmsLookupCode: "900000004",
+        supplier: "Demo Garden Supplies",
+        code: "DEMO2",
+        description: "PREMIUM HERB GROWING KIT",
+        department: "GARDEN",
+        rmsCostPrice: 6,
+        rmsRetailPrice: 14.99,
+        rmsSalePrice: null,
+        saleStartDate: new Date(2026, 0, 1),
+        saleEndDate: new Date(2026, 0, 1),
+        stockQuantity: 30
+    },
+    {
+        rmsLookupCode: "900000005",
+        supplier: "Demo Garden Supplies",
+        code: "DEMO3",
+        description: "WOODEN RAISED GARDEN PLANTER",
+        department: "GARDEN",
+        rmsCostPrice: 18,
+        rmsRetailPrice: 39.99,
+        rmsSalePrice: 29.99,
+        saleStartDate: new Date(2026, 6, 29),
+        saleEndDate: new Date(2026, 7, 15),
+        stockQuantity: 8
+    },
+    {
+        rmsLookupCode: "900000006",
+        supplier: "Demo Garden Supplies",
+        code: "DEMO4",
+        description: "STAINLESS STEEL GARDEN TROWEL",
+        department: "GARDEN",
+        rmsCostPrice: 2.5,
+        rmsRetailPrice: 6.99,
+        rmsSalePrice: null,
+        saleStartDate: new Date(2026, 0, 1),
+        saleEndDate: new Date(2026, 0, 1),
+        stockQuantity: 45
+    },
+    {
+        rmsLookupCode: "900000007",
+        supplier: "Demo Garden Supplies",
+        code: "DEMO5",
+        description: "OUTDOOR SOLAR GARDEN LANTERN",
+        department: "GARDEN",
+        rmsCostPrice: 8,
+        rmsRetailPrice: 19.99,
+        rmsSalePrice: null,
+        saleStartDate: new Date(2026, 0, 1),
+        saleEndDate: new Date(2026, 0, 1),
+        stockQuantity: 16
+    },
+    {
+        rmsLookupCode: "900000008",
+        supplier: "Demo Garden Supplies",
+        code: "DEMO6",
+        description: "ORGANIC TOMATO PLANT",
+        department: "PLANTS",
+        rmsCostPrice: 1.2,
+        rmsRetailPrice: 3.99,
+        rmsSalePrice: null,
+        saleStartDate: new Date(2026, 0, 1),
+        saleEndDate: new Date(2026, 0, 1),
+        stockQuantity: 75
+    },
+    {
+        rmsLookupCode: "900000009",
+        supplier: "Demo Garden Supplies",
+        code: "DEMO7",
+        description: "GARDEN COMPOST 40 LITRE BAG",
+        department: "GARDEN",
+        rmsCostPrice: 3,
+        rmsRetailPrice: 7.99,
+        rmsSalePrice: 5.99,
+        saleStartDate: new Date(2026, 6, 29),
+        saleEndDate: new Date(2026, 7, 10),
+        stockQuantity: 120
+    },
+    {
+        rmsLookupCode: "900000010",
+        supplier: "Demo Garden Supplies",
+        code: "DEMO8",
+        description: "BAMBOO GARDEN SUPPORT CANES PACK",
+        department: "GARDEN",
+        rmsCostPrice: 1.5,
+        rmsRetailPrice: 4.99,
+        rmsSalePrice: null,
+        saleStartDate: new Date(2026, 0, 1),
+        saleEndDate: new Date(2026, 0, 1),
+        stockQuantity: 60
+    },
+    {
+        rmsLookupCode: "900000011",
+        supplier: "Demo Garden Supplies",
+        code: "DEMO9",
+        description: "PREMIUM LAWN SEED 2KG",
+        department: "GARDEN",
+        rmsCostPrice: 5.5,
+        rmsRetailPrice: 12.99,
+        rmsSalePrice: null,
+        saleStartDate: new Date(2026, 0, 1),
+        saleEndDate: new Date(2026, 0, 1),
+        stockQuantity: 22
+    }
+]
 
 // 1. CONSTANTS AND GLOBAL VARIABLES
 
@@ -159,6 +312,17 @@ const csvInputsStore = (() => {
     return { setRmsData, getRmsData, clearRmsData, isLoaded, getRmsDataByCode}
 })()
 
+csvInputsStore.setRmsData(demoData)
+
+function setDemoData() {
+    csvInputsStore.setRmsData(demoData)
+    const productsArr = allProducts.getProducts()
+    productsArr.forEach((product) => enrichProductFromRms(product))
+    
+    createInputDropDown(csvInputsStore.getRmsData())
+}
+
+setDemoData()
 
 // 3. UTILITIES
 // SANITISATION
