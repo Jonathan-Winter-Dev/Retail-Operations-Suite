@@ -1,6 +1,7 @@
 # Retail-Operations-Suite
 A suite of vanilla JavaScript tools designed to streamline retail workflows through CSV processing, data validation, and automated exports.
 
+[Live working demo](https://jonathan-winter-dev.github.io/Retail-Operations-Suite/)
 
 # Retail Operations Suite
 
@@ -94,6 +95,10 @@ Retail-Operations-Suite/
 ```
 
 ---
+
+## Video
+
+![Example Usage](images/price-updater.gif)
 
 ## Screenshots
 
