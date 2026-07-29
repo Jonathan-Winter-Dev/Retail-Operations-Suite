@@ -1,5 +1,5 @@
 # Retail-Operations-Suite
-A suite of vanilla JavaScript tools designed to streamline retail workflows through CSV processing, data validation, and automated exports.
+A suite of vanilla JavaScript tools designed to streamline retail workflows through CSV processing, data validation, and automated exports. Example SKU codes have been included for demonstration purposes, all beginning with "DEMO".
 
 [Live working demo](https://jonathan-winter-dev.github.io/Retail-Operations-Suite/)
 
