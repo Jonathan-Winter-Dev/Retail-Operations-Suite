@@ -432,6 +432,13 @@ tr:last-of-type td:last-of-type {
 
 .downloadButtonsContainer {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+}
+
+.downloadBarkersCheckbox {
+    display: flex;
     align-items: center;
 }
 

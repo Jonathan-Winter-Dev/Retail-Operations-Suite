@@ -36,7 +36,6 @@
 
 // 0. DEMO DATA
 
-
 const demoData = [
     {
         rmsLookupCode: "900000001",
